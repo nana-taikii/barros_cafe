@@ -1,0 +1,1173 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:"Nunito Sans", sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    
+   
+}
+
+a{
+    text-decoration:none;
+    
+}
+ul li{
+    list-style:none;
+}
+
+:root{
+    --primary-color:#030303;
+    --secondary-color:#CE8840;
+    --tertiary-color:#805328;
+}
+
+/* Header */
+header{
+    position:fixed;
+    top:0;
+    display:flex;
+    justify-content:center;
+    background-color:var(--primary-color);
+    height:80px;
+    width:100%;
+    z-index:1000;
+
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:1300px;
+    margin-right:20px;
+   
+}
+nav .header_logo img{
+    height:80px;
+
+}
+
+nav .header_logo a{
+    display:flex;
+    align-items:flex;
+}
+
+nav .header_nav ul{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+    
+}
+nav .header_nav ul li{
+    text-align:center;
+}
+nav .header_nav ul a{
+    color:#fff;
+    position:relative;
+    
+}
+
+nav .header_nav ul li a:before{
+    content: '';
+    position:absolute;
+    background-color:var(--secondary-color);
+    width:100%;
+    height:2px;
+    top:25px;
+    left:0;
+    transition:transform 0.3s linear;
+    transform:scaleX(0);
+}
+nav .header_nav ul li a:hover:before{
+    transform:scaleX(1);
+    transform-origin: left;
+}
+
+nav .header_buttons button{
+    padding:4px 7px;
+    border:2px solid var(--tertiary-color);
+    border-radius:2px;
+    background-color: var(--primary-color);
+    color:#fff;
+    margin-right:5px;
+}
+nav .header_buttons #sign_up{
+    background:var(--secondary-color);
+    border:2px solid var(--secondary-color);
+}
+
+nav .header_buttons #sign_up:hover{
+    border:2px solid var(--tertiary-color);
+    background-color: var(--tertiary-color);
+    transition:all 0.4s;
+}
+
+nav .header_buttons #log_in:hover{
+    background:var(--tertiary-color);
+    border:2px solid var(--tertiary-color);
+    transition:all 0.4s;
+}
+nav .responsive_nav{
+    display:none;
+}
+nav .responsive_nav label i{
+    display:none;
+    
+}
+nav .responsive_nav label i{
+    font-size:40px;
+    color:var(--secondary-color);
+}
+#check{
+    display:none;
+}
+
+
+/*COVER SECTION*/
+#cover {
+    margin: 50px 0 0 0; 
+    background-color:var(--primary-color);
+}
+
+.cover_container .cover_content{
+    display:flex;
+    justify-content:center;
+
+    align-items:center;
+    
+   
+       
+}
+.cover_container .cover_content .cover_description{
+    flex:50%;
+    width:40%;
+    margin:0 0 0 80px;
+    padding:52px 0;
+}
+.cover_container .cover_content .cover_description h1{
+    font-family:"Libre Baskerville", "Nunito Sans",sans-serif;
+    font-size:40px;
+    color:var(--secondary-color);
+}
+.cover_container .cover_content .cover_description p{
+    font-family: "Nunito Sans",sans-serif;
+    font-size:20px;
+    margin:25px 0 0 0;
+    font-weight:600;
+    color:#fff;
+    
+}
+.cover_container .cover_content .cover_buttons{
+    margin:30px 0;
+}
+
+.cover_container .cover_content .cover_buttons button{
+    padding:4px 15px;
+    border:2px solid var(--tertiary-color);
+    border-radius:2px;
+    background-color: var(--primary-color);
+    color:#fff;
+    margin-right:20px;
+    font-size:18px;
+}
+.cover_container .cover_content .cover_buttons #order_now{
+    background-color:var(--primary-color);
+}
+.cover_container .cover_content .cover_buttons #learn_about_us{
+    background-color:var(--secondary-color);
+}
+
+.cover_container .cover_content .cover_buttons #learn_about_us:hover,
+.cover_container .cover_content .cover_buttons #order_now:hover{
+    border:2px solid var(--tertiary-color);
+    background-color: var(--tertiary-color);
+    transition:all 0.4s;
+}
+
+.cover_container .cover_content .cover_image{
+    flex:50%;
+    margin:4% 0;
+    z-index:1;
+}
+.cover_container .cover_content .cover_image img{
+    width:90%;
+   
+}
+.cover_container .cover_content .cover_image #coffe_splash{
+    position:absolute;
+    left:45%;
+    z-index:-1;
+    width:55%;
+}
+
+
+
+/*About Us Section */
+#about_us{
+    margin:80px 100px;
+}
+.title_description{
+    font-family:"Lora",sans-serif;
+    color:var(--secondary-color);
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+
+#about_us .about_us_container .about_us_content{
+    display:flex;
+    justify-content: space-between;
+    gap:10px;
+
+    align-items: center;
+ 
+    
+}
+#about_us .about_us_container .about_us_description{
+    padding: 20px 52px;
+    width:100%;
+    
+    
+}
+#about_us .about_us_container .about_us_description p{
+    margin-top:25px;
+    font-size:16px;
+    font-family:'Lora', sans-serif;
+    text-align:justify;
+    text-indent: 50px;
+    line-height:25px;
+}
+#about_us .about_us_container .about_us_description button{
+    background-color:#CE8840;
+    color:#fff;
+    padding:10px;
+    font-family:'Nunito sans', sans-serif;
+    font-size:15px;
+    font-weight: 500;
+    border-radius:5px;
+    border:transparent;
+    margin-top:20px;
+    width:100px;
+    
+}
+#about_us .about_us_container .about_us_description button:hover{
+    background-color:var(--tertiary-color);
+    color:#fff;
+    transition:all 0.3s;
+}
+
+#about_us .about_us_container .about_us_image{
+    width:100%;
+    
+}
+
+#about_us .about_us_container .about_us_image img{
+    width:100%;
+}
+
+
+
+/*WHY CHOOSE US SECTION*/
+#choose_us{
+    background-color:#252525;
+    color:#fff;
+    background-image:url('images/cofffee_background.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin-top:50px;
+    
+   
+}
+#choose_us .choose_us_content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.section_title{
+    font-family:"Nunito Sans", sans-serif;
+    text-align:center;
+    color:#fff;
+    
+}
+.section_title span{
+    width:500px;
+    background-color:var(--secondary-color);
+    padding:10px 10px;
+}
+#choose_us .choose_us_content .choose_us_description h1{
+    margin-top:80px;
+    font-size:45px;
+    font-family:"Lora";
+ 
+    
+}
+
+
+#choose_us .choose_us_content .choose_us_images{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap: nowrap;
+    gap:30px;
+    margin:80px 0;
+    
+}
+#choose_us .choose_us_content .choose_us_images .images{
+    width:250px;
+    border:1px solid black;
+    padding:0;
+    margin:0;
+    height:300px;
+    text-align:center;
+    padding:10px;
+    border-radius:20px;
+    border:3px solid #C97944;
+    background-color:rgba(22,23,25,0.5);
+}
+#choose_us .choose_us_content .choose_us_images .coffee_flavors{
+    background-color:var(--secondary-color);
+   
+}
+
+#choose_us .choose_us_content .choose_us_images .images img{
+    width:80px;
+}
+
+#choose_us .choose_us_content .choose_us_images h3{
+    color:#F6D190;
+    margin-top:10px;
+
+}
+#choose_us .choose_us_content .choose_us_images p{
+    margin-top:10px;
+    font-weight: 600;
+} 
+
+
+/*MENU SECTION*/
+#menu{
+   width:100%;
+   margin:0 auto;
+   background-color:#1D1B1E;
+   color:#fff;
+   padding-top:80px;
+   background-image:url('images/leaves_background.png');
+   background-repeat:no-repeat;
+   background-size:30% 30%;
+   background-position:top right; 
+}
+#menu .menu_container{
+    padding:30px;
+}
+
+#menu .menu_container .menu_description{
+    width:59%;
+    margin:0 auto;
+    
+}
+#menu .menu_container h2{
+    text-align:center;
+    font-family:'Lora', sans-serif;
+    font-size:60px;
+    letter-spacing:5px;   
+}
+#menu .menu_container h2 img{
+    width:80px;
+    margin:-5px -20px;
+}
+#menu .menu_container h2::after{
+    content:"";
+    height:5px;
+    width:150px;
+    background-color:var(--secondary-color);
+    display:block;
+    margin:0 auto;
+    border-radius:var(--secondary-color); 
+}
+#menu .menu_container .menu_description p{
+    text-align:center;
+    font-family:'Nunito Sans';
+    margin:30px;
+    font-size:20px;
+    font-weight:800;
+}
+
+#menu .menu_content{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    border-radius:15px;
+    background-color:#252525;
+    color:#fff;
+
+}
+#menu .menu_content .hot_drinks_menu,
+#menu .menu_content .cold_drinks_menu,
+#menu .menu_content .snacks_menu
+{
+    display:flex;
+    flex-direction:column;
+    width:calc(100%/3 - 80px);
+    gap:30px;
+    padding:20px;
+    
+}
+#menu .menu_content .responsive_snack_menu{
+        width:100%;
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        gap:30px 0;
+
+        
+}
+#menu .menu_content .cold_drinks_menu,
+#menu .menu_content .snacks_menu
+{
+    border-left:1px solid var(--primary-color);
+}
+
+#menu .menu_content .hot_drinks_menu img,
+#menu .menu_content .cold_drinks_menu img,
+#menu .menu_content .snacks_menu .snacks_menu_content img
+{
+    border-radius:5px;
+    width:40%;
+}
+#menu .menu_content .hot_drinks_menu h1,
+#menu .menu_content .cold_drinks_menu h1,
+#menu .menu_content .snacks_menu h1{
+    font-family:"Lora", sans-serif;
+    letter-spacing:2px;   
+}
+
+#menu .menu_content .hot_drinks_menu h1 img,
+#menu .menu_content .cold_drinks_menu h1 img,
+#menu .menu_content .snacks_menu h1 img{
+    width:40px;
+    margin:-5px 5px;
+    
+}
+
+#menu .menu_content .hot_drinks_menu .description,
+#menu .menu_content .cold_drinks_menu .description,
+#menu .menu_content .snacks_menu .description
+{
+    display:inline-block;
+    position:absolute;
+    margin-left:40px;
+}
+
+#menu .menu_content .hot_drinks_menu .description h3,
+#menu .menu_content .cold_drinks_menu .description h3,
+#menu .menu_content .snacks_menu .description h3{
+    font-family:"Libre Baskerville";
+    font-size:20px;
+    letter-spacing:1px;
+}
+#menu .menu_content .hot_drinks_menu .description p,
+#menu .menu_content .cold_drinks_menu .description p,
+#menu .menu_content .snacks_menu .description p{
+    margin-top:5px;
+    font-size:20px;
+    font-weight:bold;
+    color:var(--secondary-color);
+}
+
+#menu .menu_content .hot_drinks_menu .description button,
+#menu .menu_content .cold_drinks_menu .description button,
+#menu .menu_content .snacks_menu .description button{
+    padding:5px 10px;
+    border-radius:3px;
+    background-color: var(--secondary-color);
+    color:#fff;
+    font-weight:bold;
+    margin-right:20px;
+    margin-top:5px;
+    font-family:'Nunito Sans';
+    border:transparent;
+}
+#menu .menu_content .hot_drinks_menu .description button:hover,
+#menu .menu_content .cold_drinks_menu .description button:hover,
+#menu .menu_content .snacks_menu .description button:hover{
+    background-color:var(--tertiary-color);
+    color:#fff;
+    transition:all 0.3s;
+}
+
+
+
+
+
+/* CONTACT US */
+#contact_us{
+    width:100%;
+    padding:80px 20px;
+    color:#fff;
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:50px;
+    background-image:url('images/small_bean_icon.png');
+  
+    
+}
+#contact_us .contact_us_container{
+    width:60%;
+    background-color:#252525;
+    margin:0 20px;
+    box-shadow:0px 16px 16px 8px rgba(0,0,0,0.19);
+    border-radius:10px;
+    
+}
+#contact_us .contact_us_content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    
+}
+#contact_us img{
+    width:40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#contact_us .contact_us_content .contact_us_section{
+    width:50%;
+    background-color:white;
+    padding:50px;      
+}
+
+
+#contact_us .contact_us_content .contact_us_section h1{
+    font-family:'Nunito Sans', sans-serif;
+    text-align:center;
+    font-weight:900;
+    color:var(--secondary-color);
+    margin-bottom:10px;
+}
+#contact_us .contact_us_content .contact_us_section input,
+#contact_us .contact_us_content .contact_us_section textarea
+{
+    width:100%;
+    margin:10px auto;
+    border-radius:5px;
+    height:40px;
+    padding:10px;
+    border:2px solid var(--secondary-color);
+}
+#contact_us .contact_us_content .contact_us_section textarea{
+    height:60px;
+}
+#contact_us .contact_us_content .contact_us_section button{
+    padding:5px 15px;
+    border-radius:5px;
+    background:var(--secondary-color);
+    border:2px solid var(--secondary-color);
+    color:#fff;
+    font-weight:bold;
+}
+#contact_us .contact_us_content .contact_us_section button:hover{
+    background-color:var(--tertiary-color);
+    color:#fff;
+    transition:all 0.3s;
+}
+
+#contact_us .contact_us_content .contact_details_section{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    padding:30px;
+   
+   
+}
+#contact_us .contact_us_content .contact_details_section .contact_details_content{
+    margin-top:20px;
+}
+#contact_us .contact_us_content .contact_details_section .contact_details_content i{
+    font-size:30px;
+    display:inline-block;
+    position:absolute;
+    color:var(--secondary-color);
+   
+}
+#contact_us .contact_us_content .contact_details_section .contact_details_content .contact_description{
+    margin-left:50px;    
+
+}
+#contact_us .contact_us_content .contact_details_section .contact_details_content .contact_description h3{
+    color:var(--secondary-color);
+    font-family:'Nunito Sans', sans-serif;
+    font-weight:900;
+    font-size:15px;
+}
+#contact_us .contact_us_content .contact_details_section .contact_details_content .contact_description p{
+    font-family:"Nunito Sans", sans-serif;
+    font-size:17px;
+    font-weight:400;
+}
+
+
+/*FOOTER*/
+footer{
+    background-color:#252525;
+    margin:50px 50px 0 50px;
+    color:#fff;
+    padding:20px;
+
+}
+
+footer .footer_content{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    width:80%;
+    gap:60px;
+    margin:0 auto;
+
+}
+footer .footer_content .left_section{
+    width:60%;
+    position:relative;
+ 
+   
+}
+footer .footer_content .left_section .left_section_logo{
+    width:100%;
+    border-bottom:1px solid var(--secondary-color);
+   
+    
+}
+  
+footer .footer_content .left_section a h1{
+    display:inline-block;     
+    position:absolute;
+    top:35px;
+    font-family:"Lora";
+    letter-spacing:2px;
+    color:var(--secondary-color);
+  
+}
+
+footer .footer_content .left_section .navigation_links{
+   padding-left:10px;
+   padding-top:20px;  
+ 
+}
+
+footer .footer_content .left_section ul li{
+    display:inline-block;
+}
+footer .footer_content .left_section ul li a{
+    padding:10px;
+    font-family:'Nunito Sans', sans-serif;
+    font-weight:500;
+    color:#fff;
+}
+footer .footer_content .left_section ul li a:hover{
+    color:var(--secondary-color);
+    transition:all 0.3s ease;
+
+}
+footer .footer_content .left_section .follow_links{
+    padding:20px;
+    margin-top:20px;
+
+}
+footer .footer_content .left_section .follow_links i{
+    font-size:30px;
+    color:var(--secondary-color);
+    margin-right:30px;
+    transition:all 0.3s ease;
+    
+}
+footer .footer_content .left_section .follow_links i:hover{
+    transform:scale(1.3);
+    
+}
+
+footer .footer_content .right_section{
+    width:50%;
+   
+   
+}
+
+footer .footer_content .right_section  h3{
+    font-family:"Libre Baskerville", sans-serif;
+    color:#fff;
+    letter-spacing:2px;
+   
+}
+footer .footer_content .right_section ul li{
+    margin-top:20px;
+    
+}
+footer .footer_content .right_section ul li i{
+    font-size:30px;
+    color:var(--secondary-color);
+    margin-right:10px;
+   
+}
+footer .footer_content .right_section ul li span{
+    font-family:"Nunito Sans";
+    font-weight:bold;
+    position:absolute;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width:1200px){
+    #about_us .about_us_container .about_us_content{
+        flex-direction:column;
+    }
+   
+    
+    #menu .menu_container .menu_description{
+        width:100%;
+    
+    }
+    #menu .menu_content .hot_drinks_menu,
+    #menu .menu_content .cold_drinks_menu,
+    #menu .menu_content .snacks_menu{
+
+        width:calc(100%/3);
+        gap:30px;
+        padding:20px;
+    
+    }
+
+    #menu .menu_content .hot_drinks_menu h1,
+    #menu .menu_content .cold_drinks_menu h1,
+    #menu .menu_content .snacks_menu h1{
+        font-size:20px;
+    }
+
+    #menu .menu_content .hot_drinks_menu .description h3,
+    #menu .menu_content .cold_drinks_menu .description h3,
+    #menu .menu_content .snacks_menu .description h3{
+        font-size:15px;
+    
+    }
+    #menu .menu_content .hot_drinks_menu .description p,
+    #menu .menu_content .cold_drinks_menu .description p,
+    #menu .menu_content .snacks_menu .description p{
+        font-size:18px;
+     }
+    #menu .menu_content .hot_drinks_menu .description button,
+    #menu .menu_content .cold_drinks_menu .description button,
+    #menu .menu_content .snacks_menu .description button{
+        font-size:12px;
+    
+    }
+    #contact_us{
+        flex-direction:column;
+        width:100%;
+    }
+    #contact_us img{
+        width:80%;
+    }
+
+    #contact_us .contact_us_content{
+        flex-direction:row;
+        width:100%;
+        
+        
+    }
+    #contact_us .contact_us_container{
+        width:100%;
+        
+    }
+    #contact_us .contact_us_content .contact_us_section{
+        width:100%;
+    }
+
+    #contact_us .contact_us_content .contact_details_section{
+        width:100%;
+        
+    }
+    footer{
+        width:100%;
+        margin:0;
+    }
+    footer .footer_content{
+        width:100%;
+    }
+    footer .footer_content .left_section .left_section_logo a h1{
+        font-size:26px;
+       
+    }
+
+}
+
+
+@media screen and (max-width:900px){
+    header{
+        border-bottom:1px solid #49322A;
+    }
+    nav .header_buttons{
+        position:absolute;
+        top:380px;
+        right:-100%;
+        transition:all 0.5s ease;
+    }
+    nav .header_nav{
+        position:absolute;
+        width:200px;
+        top:80px;
+        right:-100%;
+        height:100vh;
+        background-color:var(--primary-color);
+        transition:all 0.4s ease;
+        border-left:1px solid #49322A;
+
+    }
+    nav .header_nav ul{
+        display:block;
+        text-align:center;
+        margin-top:50px;     
+    }
+    nav .header_nav ul li{
+        padding:10px;
+    }
+    nav .responsive_nav{
+        display:block;
+    }
+
+    nav .responsive_nav .menu_btn{
+        display:block;
+    }
+    #check:checked ~ .responsive_nav label .menu_btn{
+        display:none;
+    }
+    #check:checked ~ .responsive_nav label .close_btn{
+        display:block;
+    }
+    #check:checked ~ .header_nav{
+        right:0px;
+        transition:all 0.4s ease;
+    }
+    #check:checked ~ .header_buttons{
+        right:30px;
+        transition:all 0.4s ease;
+    }
+
+    .cover_container .cover_content .cover_image{
+        flex:45%;
+        width:100%;
+       
+    }
+    .cover_container .cover_content .cover_description{
+       flex:55%;
+        
+    }
+    .cover_container .cover_content .cover_image img{
+        width:100%;
+    }
+    .cover_container .cover_content .cover_image #coffe_splash{
+        width:50%;
+    }
+    .cover_container .cover_content .cover_description h1{
+        font-size:25px;
+    }
+    .cover_container .cover_content .cover_description p{    
+        font-size:15px;  
+        
+    }
+    .cover_container .cover_content .cover_buttons button{
+        font-size:15px;
+    }
+
+    #about_us {
+        margin:20px;
+        
+    }
+
+    #about_us .about_us_container .about_us_image{
+        width:100%;
+    }
+
+    #choose_us .choose_us_content .choose_us_description h1{
+        font-size:35px;
+    }
+    #choose_us .choose_us_content .choose_us_images .images{
+        width:200px;
+    }
+    #menu .menu_content{
+       
+        flex-wrap:wrap;
+    }
+    #menu .menu_content .hot_drinks_menu,
+    #menu .menu_content .cold_drinks_menu
+    {
+        width:50%;
+    }
+    #menu .menu_content .snacks_menu{
+        width:100%;
+        border-top:1px solid var(--primary-color);
+    }
+
+    #menu .menu_content .responsive_snack_menu{
+        flex-direction:row;
+  
+          
+    }
+    #menu .menu_content .responsive_snack_menu .snacks_menu_content{
+        width:calc(100%/2);
+        
+    }
+    footer{
+        width:100%;
+        margin:0;
+    }
+    footer .footer_content{
+        flex-direction:column;
+        width:100%;
+        padding:0;
+      
+    }
+    footer .footer_content .left_section{
+        width:100%;
+       
+    }
+    footer .footer_content .right_section{
+        width:100%;
+        padding-left:25px;
+       
+        
+    }
+   
+}
+
+
+
+    
+
+
+@media screen and (max-width:730px){
+    .cover_container .cover_content{
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+   
+    }
+    .cover_container .cover_content .cover_description{
+        width:80%;
+        margin:0px;
+        text-align:center;
+ 
+    }
+    .cover_container .cover_content .cover_buttons{
+        margin:25px 0;
+    }
+    .cover_container .cover_content .cover_buttons button{
+        margin:5px 10px;
+    }
+
+    .cover_container .cover_content .cover_image img{
+        width:80%;
+    }
+    .cover_container .cover_content .cover_image #coffe_splash{
+        width:100%;
+        position:absolute;
+        left:0%;
+        z-index:-1;
+        width:100%;
+    }
+    .cover_container .cover_content .cover_image{
+        flex:100%;
+        width:80%;
+        justify-content: center;
+        align-items:center;
+        position:relative;
+        top:-100px;
+        text-align:center;
+      
+    }
+
+    #choose_us .choose_us_content .choose_us_description h1{
+        text-align: center;
+    }
+
+    #choose_us .choose_us_content .choose_us_images .images{
+        width:180px;
+    }
+
+    #menu .menu_content .hot_drinks_menu .description h3,
+    #menu .menu_content .cold_drinks_menu .description h3,
+    #menu .menu_content .snacks_menu .description h3{
+        font-size:12px;
+    
+    }
+    #menu .menu_content .hot_drinks_menu .description p,
+    #menu .menu_content .cold_drinks_menu .description p,
+    #menu .menu_content .snacks_menu .description p{
+        font-size:14px;
+     }
+    #menu .menu_content .hot_drinks_menu .description button,
+    #menu .menu_content .cold_drinks_menu .description button,
+    #menu .menu_content .snacks_menu .description button{
+        font-size:12px;
+    
+    }
+   
+}
+@media screen and (max-width:600px){
+    
+    #choose_us .choose_us_content .choose_us_images{
+        flex-direction:column;
+    }
+    #choose_us .choose_us_content .choose_us_images .images{
+        width:280px;
+        height:230px;
+    }
+    #menu .menu_container h2{    
+        font-size:40px;
+       
+    }
+
+    #menu .menu_container .menu_description p{    
+        font-size:15px;
+        margin:20px 10px;
+       
+    }
+
+    #menu .menu_content .hot_drinks_menu,
+    #menu .menu_content .cold_drinks_menu
+    {
+        width:100%;
+    }
+    #menu .menu_content .hot_drinks_menu .description h3,
+    #menu .menu_content .cold_drinks_menu .description h3,
+    #menu .menu_content .snacks_menu .description h3{
+        font-size:14px;
+    
+    }
+    #menu .menu_content .hot_drinks_menu .description p,
+    #menu .menu_content .cold_drinks_menu .description p,
+    #menu .menu_content .snacks_menu .description p{
+        font-size:14px;
+     }
+    #menu .menu_content .hot_drinks_menu .description button,
+    #menu .menu_content .cold_drinks_menu .description button,
+    #menu .menu_content .snacks_menu .description button{
+        font-size:14px;
+    
+    }
+
+    #menu .menu_content .responsive_snack_menu{
+        flex-direction:column;
+    }
+    #menu .menu_content .responsive_snack_menu .snacks_menu_content{
+        width:calc(100%);  
+        
+    }
+    #contact_us img{
+        width:100%;
+    }
+
+    #contact_us .contact_us_content{
+        flex-direction:column;
+        width:100%;
+        flex-wrap:wrap;
+        
+    }
+    #contact_us .contact_us_container{
+        width:100%;
+        
+    }
+    #contact_us .contact_us_content .contact_us_section{
+        width:100%;
+    }
+
+    #contact_us .contact_us_content .contact_details_section{
+        width:100%;
+        
+    }
+
+}
+@media screen and (max-width:430px){
+    #about_us {
+        margin:0;
+        
+    }
+    #about_us .about_us_container .about_us_description h2{
+        font-size:25px;
+        text-align: center;
+        
+    }
+    #about_us .about_us_container .about_us_description p{
+        font-size:13px;
+    }
+
+    #menu .menu_container h2{    
+        font-size:40px;
+       
+    }
+
+    #menu .menu_container .menu_description p{    
+        font-size:14px;
+        margin:20px 10px;
+       
+    }
+    #menu .menu_content .hot_drinks_menu .description h3,
+    #menu .menu_content .cold_drinks_menu .description h3,
+    #menu .menu_content .snacks_menu .description h3{
+        font-size:12px;
+    
+    }
+    #menu .menu_content .hot_drinks_menu .description p,
+    #menu .menu_content .cold_drinks_menu .description p,
+    #menu .menu_content .snacks_menu .description p{
+        font-size:14px;
+     }
+    #menu .menu_content .hot_drinks_menu .description button,
+    #menu .menu_content .cold_drinks_menu .description button,
+    #menu .menu_content .snacks_menu .description button{
+        font-size:12px;
+    
+    }
+
+    footer .footer_content .left_section .left_section_logo h1{
+        font-size:28px;
+    }
+    footer .footer_content .left_section .navigation_links li a{
+        font-size:14px;
+    }
+    footer .footer_content .left_section .follow_links i{
+        font-size:25px;
+    }
+    footer .footer_content .right_section h3{
+        font-size:16px;
+    } 
+    footer .footer_content .right_section ul li i{
+        font-size:22px;
+    }
+    footer .footer_content .right_section ul li span{
+        font-size:13px;
+    }
+
+    
+    
+}
